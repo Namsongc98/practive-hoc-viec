@@ -1,0 +1,71 @@
+/* phần head */
+.head {
+    padding: 24px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+
+}
+
+.head-left {
+    display: flex;
+}
+
+.head__WpLogo {
+    display: flex;
+    line-height: 58px;
+}
+
+.header__logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.head__title {
+    color: var(--color-hightlight-2);
+   
+     
+}
+
+.head-nav {
+    margin-left: 100px;
+
+}
+
+.head-nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+.head__item-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.head__item {
+    margin-left: 20px;
+    line-height: 58px;
+}
+.head__studen{
+
+}
+.head__Wpstuden{
+    display: flex;
+}
+.head__linkStuden{
+    text-decoration: none;   
+    color: #333;
+}
+.head__nameStuden{
+color: var(--color-hightlight-2);
+}
+.head__nameImg{
+    margin: 8px 5px;
+}.head__linkStuden{
+    font-size: 12px;
+}

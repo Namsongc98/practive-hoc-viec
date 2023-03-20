@@ -1,0 +1,17 @@
+:root{
+    --color-hightlight-1: #02a04c;
+    --color-hightlight-2: #00833e;
+    --color-loader: #f8f8f8;
+    --background-loader: #ffffff;
+    --color-input:#0dcaf0;
+    --border-color: #ddd;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

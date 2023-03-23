@@ -62,15 +62,142 @@
               &nbsp; Quaylại menu chính
             </a>
           </div>
-          <div class="nav__manage" >
+          <div class="nav__manage">
             <ul class="nav__manage">
               <h5 class="nav-title">QUẢN LÝ TÀI KHOẢN TẠM</h5>
-              <li class="nav-title"><a class="nav-title nav-title__link" href="">Giảng viên nội bộ</a></li>
-              <li class="nav-title"><a class="nav-title nav-title__link"   href="">Báo cáo</a></li>
+              <li class="nav-title">
+                <a class="nav-title nav-title__link" href=""
+                  >Giảng viên nội bộ</a
+                >
+              </li>
+              <li class="nav-title">
+                <a class="nav-title nav-title__link" href="">Báo cáo</a>
+              </li>
             </ul>
           </div>
         </nav>
-        <main class="main"></main>
+        <main class="main">
+          <div class="main-wapper">
+            <input
+              type="radio"
+              class="report-input"
+              name="with"
+              id="report"
+              checked="mytab"
+            />
+            <label for="report" class="label-report">Báo cáo giảng viên</label>
+            <div class="report-conten">
+              <div class="report-wp">
+                <div class="report-wp__left report">
+                  <h3 class="report__left-title">
+                    Báo cáo giảng viên theo tháng
+                  </h3>
+                  <div class="report__left-staff">
+                    <label for="" class="teach-left">Giảng viên</label>
+                    <div class="report__left-staff-Wpinput">
+                      <input
+                        type="text"
+                        class="report__left-staff-input"
+                        placeholder="mã nhân viên"
+                      />
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <div class="report__left-staff">
+                    <label for="" class="teach-left">Thời gian</label>
+                    <div class="report__left-staff-Wpinput">
+                      <input
+                        type="text"
+                        class="report__left-staff-input"
+                        placeholder="mã nhân viên"
+                      />
+                      <img src="" alt="" />
+                    </div>
+                    <div class="report__left-staff-Wpinput">
+                      <input
+                        type="text"
+                        class="report__left-staff-input"
+                        placeholder="2023"
+                      />
+                      <img src="" alt="" />
+                    </div>
+                    <button class="down-report">Tải báo cáo</button>
+                  </div>
+                </div>
+
+                <div class="report-wp__right report">
+                  <h2 class="report__left-title">
+                    Báo cáo giảng viên theo năm
+                  </h2>
+                  <div class="report__left-staff">
+                    <label for="">Giảng viên</label>
+                    <div class="report__left-staff-Wpinput">
+                      <input
+                        type="text"
+                        class="report__left-staff-input"
+                        placeholder="mã nhân viên"
+                      />
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <div class="report__left-staff">
+                    <label for="">Giảng viên</label>
+                    <div class="report__left-staff-Wpinput">
+                      <input
+                        type="text"
+                        class="report__left-staff-input"
+                        placeholder="mã nhân viên"
+                      />
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                  <button class="down-report">Tải báo cáo</button>
+                </div>
+              </div>
+            </div>
+
+            <input
+              type="radio"
+              name="with"
+              id="evaluation"
+              class="report-input"
+            />
+            <label for="evaluation" class="label-evaluation"
+              >Báo cáo giảng viên</label
+            >
+            <div class="report-conten">
+              <div>
+                <div class="report-wp__right">
+                  <h3 class="title__right">Báo cáo đánh giá giảng viên</h3>
+                  <div class="wp-form">
+                    <div class="teach__right">
+                      <label for="">Giảng viên</label>
+                      <div class="teach__right-wpInput">
+                       <input type="text " placeholder="Mã nhân viên" class="teach__right-Input">
+                      </div>
+                    </div>
+                    <div class="teach__right">
+                      <label for="">Mã khóa học</label>
+                      <div class="teach__right-wpInput">
+                       <input type="text " placeholder="Tên khóa học, tên khóa học"  class="teach__right-Input">
+                      </div>
+                    </div>
+                    <div class="teach__right">
+                      <label for="">Thời gian bắt đầu (từ ngày đến ngày)</label>
+                      <div class="teach__right-wpInput">
+                       <input type="text " class="teach__right-Input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-end">
+                    <button class="down-report">Tải báo cáo</button>
+                    <button class="down-report">Tải báo cáo</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
       <footer class="footer"></footer>
     </div>

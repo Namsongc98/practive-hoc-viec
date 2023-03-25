@@ -85,7 +85,13 @@
               id="report"
               checked="mytab"
             />
-            <label for="report" class="label-report">Báo cáo giảng viên</label>
+            <label
+              for="report"
+              onclick="evaclick(event)"
+              id="reportAdd"
+              class="label-chung"
+              >Báo cáo giảng viên</label
+            >
             <div class="report-conten">
               <div class="report-wp">
                 <div class="report-wp__left report">
@@ -162,9 +168,15 @@
               id="evaluation"
               class="report-input"
             />
-            <label for="evaluation" class="label-evaluation"
+
+            <label
+              for="evaluation"
+              id="reportAdd"
+              onclick="evaclick(event)"
+              class="label-chung"
               >Báo cáo giảng viên</label
             >
+
             <div class="report-conten">
               <div>
                 <div class="report-wp__right">
@@ -173,25 +185,50 @@
                     <div class="teach__right">
                       <label for="">Giảng viên</label>
                       <div class="teach__right-wpInput">
-                       <input type="text " placeholder="Mã nhân viên" class="teach__right-Input">
+                        <input
+                          type="text "
+                          placeholder="Mã nhân viên"
+                          class="teach__right-Input"
+                        />
                       </div>
                     </div>
                     <div class="teach__right">
                       <label for="">Mã khóa học</label>
                       <div class="teach__right-wpInput">
-                       <input type="text " placeholder="Tên khóa học, tên khóa học"  class="teach__right-Input">
+                        <input
+                          type="text "
+                          placeholder="Tên khóa học, tên khóa học"
+                          class="teach__right-Input"
+                        />
                       </div>
                     </div>
                     <div class="teach__right">
                       <label for="">Thời gian bắt đầu (từ ngày đến ngày)</label>
                       <div class="teach__right-wpInput">
-                       <input type="text " class="teach__right-Input">
+                        <input type="text " class="teach__right-Input" />
                       </div>
                     </div>
                   </div>
                   <div class="button-end">
                     <button class="down-report">Tải báo cáo</button>
                     <button class="down-report">Tải báo cáo</button>
+                  </div>
+                  <div class="wp-table">
+                    <table class="table">
+                      <thead>
+                        <tr class="table-head">
+                          <td class="data">Mã nhân viên đánh giá</td>
+                          <td class="data">Họ và tên người đánh giá</td>
+                          <td class="data">Mã GVNB</td>
+                          <td class="data">Họ tên GVNB</td>
+                          <td class="data">Tên khóa học</td>
+                          <td class="data">Ngày khai giảng</td>
+                          <td class="data">Tổng điểm</td>
+                          <td class="data">Xếp loại</td>
+                          <td class="data">Đề xuất của học viện</td>
+                        </tr>
+                      </thead>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -201,5 +238,30 @@
       </div>
       <footer class="footer"></footer>
     </div>
+    <script>
+      //  let cout = 0;
+
+      //  function evaclick(evt) {
+      //    let reportAdd = document.getElementById("reportAdd");
+      //    console.log(reportAdd)
+      //    for (let i = 0; i < reportAdd.length; i++) {
+      //     reportAdd[i].classLiss.add("evaluationtBlue")
+      //    }
+      //   }
+      var btnContainer = document.getElementById("reportAdd");
+
+      // Get all buttons with class="btn" inside the container
+      var btns = btnContainer.getElementsByClassName("label-chung");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < btns.length; i++) {
+        console.log(typeof btns);
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
   </body>
 </html>
